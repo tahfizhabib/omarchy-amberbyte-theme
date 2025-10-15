@@ -19,3 +19,13 @@ Warm amber colors, clean & minimal UI, optimized readability, smooth animated th
 
 ```bash
 omarchy-theme-install https://github.com/tahfizhabib/omarchy-amberbyte-theme
+
+```
+
+
+---
+
+## Demo
+
+[Amberbyte Demo](https://github.com/user-attachments/assets/4c09b3ed-a0b6-4908-b244-03cc3707f91b)
+
