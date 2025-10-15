@@ -1,0 +1,12 @@
+/* ────────────────────────────────────────────────────────────
+ * Custom Red Theme for Waybar
+ * Made with Omarchist
+ * ────────────────────────────────────────────────────────────
+ */
+
+@define-color background rgba(27, 17, 18, 0.85); /* dark red base with transparency */
+@define-color foreground #FFEAEA;                /* soft light red text */
+
+/* Optional: you can also adjust hover / accent colors for consistency */
+@define-color accent #FF4A4A;                   /* vivid red for highlights */
+@define-color border #FF4A4A;                   /* border color if needed */

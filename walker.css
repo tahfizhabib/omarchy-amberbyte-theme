@@ -1,0 +1,130 @@
+@define-color selected-text #ff5a5a;
+@define-color text #ffffff;
+@define-color base #1b1112;
+@define-color border #ed5f55;
+@define-color foreground #B33A3A;
+@define-color background #2B2826;
+@define-color hover #ff4c4c;
+@define-color accent #ff3a3a;
+
+#window {
+  background: @background;
+  border-radius: 10px;
+  padding: 2px;
+  border: 1px solid alpha(@border, 0.3);
+}
+
+#box {
+  background: @base;
+  border-radius: 8px;
+  padding: 4px 0;
+  margin: 0;
+}
+
+#search,
+.search,
+#tray #search,
+#tray .search {
+  background: alpha(@background, 0.15);       /* Slightly transparent */
+  color: @foreground;                        /* Text color */
+  border: 1px solid alpha(@border, 0.4);     /* Soft border */
+  border-radius: 6px;                        /* Standard smooth corner */
+  padding: 5px 10px;                         /* Comfortable internal spacing */
+  font-size: 13px;
+  font-weight: 400;
+  transition: all 0.2s ease;                 /* Smooth hover/focus */
+}
+
+#search:focus,
+.search:focus,
+#tray #search:focus,
+#tray .search:focus {
+  border-color: @accent;                     /* Highlight border on focus */
+  background: alpha(@background, 0.25);      /* Slightly more visible background */
+  outline: none;                             /* Remove default focus outline */
+  box-shadow: 0 0 4px @accent;              /* Subtle glow on focus */
+}
+
+#list,
+.list {
+  padding: 0;
+}
+
+#item,
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 4px 10px;
+  margin: 0;
+  border-radius: 6px;
+  transition: all 0.15s ease;
+  color: @text;
+}
+
+#item:hover,
+.item:hover {
+  background: alpha(@hover, 0.1);           /* Subtle hover background */
+}
+
+#item:selected,
+.item:selected,
+#item:focus,
+.item:focus,
+#item:checked,
+.item:checked {
+  background: alpha(@accent, 0.15);         /* Selected background */
+  color: @selected-text;
+}
+
+#item:active,
+.item:active {
+  background: alpha(@border, 0.1);
+  transform: scale(0.98);
+}
+
+#item .title {
+  font-weight: 400;
+  font-size: 13px;
+  color: @foreground;
+}
+
+#item:selected .title,
+.item:selected .title {
+  font-weight: 500;
+  color: @selected-text;
+}
+
+#item .subtitle {
+  font-size: 11px;
+  color: alpha(@text, 0.6);
+}
+
+#item:selected .subtitle,
+.item:selected .subtitle {
+  color: alpha(@selected-text, 0.8);
+}
+
+#item .icon {
+  margin-right: 6px;
+  -gtk-icon-size: 18px;
+}
+
+scrollbar {
+  width: 5px;
+  background: transparent;
+}
+
+scrollbar slider {
+  background: alpha(@accent, 0.5);
+  border-radius: 3px;
+}
+
+scrollbar slider:hover {
+  background: @accent;
+}
+
+scrollbar trough {
+  background: transparent;
+  border-radius: 3px;
+}

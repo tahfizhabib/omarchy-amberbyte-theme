@@ -1,0 +1,75 @@
+@define-color background-color #1b1112; /* dark red base */
+@define-color border-color     #ff4a4a; /* vivid red border */
+@define-color label            #ffeaea; /* soft light text */
+@define-color image            #ffb3b3; /* light red icons */
+@define-color progress         #ff5a5a; /* bright red progress */
+
+window {
+    background-color: transparent;
+    border: none;
+    border-radius: 8px;
+    padding: 0;
+    box-shadow: none;
+}
+
+.osd,
+#osd,
+osd {
+    background-color: alpha(@background-color, 0.92);
+    border: 1px solid @border-color;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    padding: 6px 10px;
+    min-width: 300px;
+    min-height: 80px;
+}
+
+image {
+    color: @image;
+    -gtk-icon-size: 36px;
+    margin: 0 10px 0 0;
+}
+
+label {
+    color: @label;
+    font-size: 13px;
+    font-weight: 500;
+    margin: 0;
+}
+
+/* ────────────────── Progress Bar ────────────────── */
+progressbar {
+    border-radius: 6px;
+    margin-top: 6px;
+    min-height: 10px;
+    min-width: 160px;
+    background: alpha(@border-color, 0.1); /* subtle base */
+    overflow: hidden;
+}
+
+progressbar > trough {
+    background: transparent; /* remove default styling */
+    border-radius: 6px;
+    min-height: 10px;
+}
+
+progressbar > trough > progress {
+    background: linear-gradient(90deg, #ff6b6b, #ff1a1a); /* bright gradient red */
+    border-radius: 6px;
+    min-height: 10px;
+    box-shadow: 0 0 6px rgba(255, 74, 74, 0.6); /* subtle glow effect */
+    transition: width 0.3s ease; /* smooth progress animation */
+}
+
+progressbar trough {
+    background: transparent;
+    border-radius: 6px;
+    min-height: 10px;
+}
+
+progressbar progress {
+    background: linear-gradient(90deg, #ff6b6b, #ff1a1a);
+    border-radius: 6px;
+    min-height: 10px;
+    box-shadow: 0 0 6px rgba(255, 74, 74, 0.6);
+}
