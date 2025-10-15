@@ -3,7 +3,7 @@
 Amberbyte is a sleek, amber-inspired theme for Omarchy. It gives your terminal a modern, minimal look while keeping everything clear and easy to read.
 
 <p align="center">
-  <a href="https://github.com/tahfizhabib/omarchy-amberbyte-theme/blob/0f813b70e6c6b2210e950ee56b0885c72a327e5b/media/Preview.webm">
+  <a href="https://github.com/user-attachments/assets/4c09b3ed-a0b6-4908-b244-03cc3707f91b">
     <img src="media/Preview.png" alt="Amberbyte Preview" width="750">
   </a>
 </p>
@@ -11,16 +11,13 @@ Amberbyte is a sleek, amber-inspired theme for Omarchy. It gives your terminal a
 ---
 
 ## Features
-* **Warm Amber Colors** – Pleasant amber shades that are easy on the eyes  
-* **Clean & Minimal UI** – Focus on your terminal content without distractions  
-* **Optimized Readability** – Text and UI elements are clear and easy to read  
-* **Animated Theme Switch** – Smooth switching animation when changing themes or UI states
+Warm amber colors, clean & minimal UI, optimized readability, smooth animated theme switch.
 
 ---
 
 ## Installation
 
-Run this command to install Amberbyte:
+Install Amberbyte by running:
 
 ```bash
 omarchy-theme-install https://github.com/tahfizhabib/omarchy-amberbyte-theme
